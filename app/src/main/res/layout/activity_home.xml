@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:background="@drawable/home"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/arch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/arch_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arch" />
+
+    <ImageView
+        android:id="@+id/cse"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/cse_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cse" />
+
+    <ImageView
+        android:id="@+id/bba"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/dba_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cse_txt"
+        app:srcCompat="@drawable/bba" />
+
+    <ImageView
+        android:id="@+id/civil"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/civil_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arch_txt"
+        app:srcCompat="@drawable/civil" />
+
+    <ImageView
+        android:id="@+id/eee"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/eee_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/civil_txt"
+        app:srcCompat="@drawable/eee" />
+
+    <ImageView
+        android:id="@+id/eng"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/eng_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dba_txt"
+        app:srcCompat="@drawable/eng" />
+
+    <ImageView
+        android:id="@+id/law"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/law_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eee_txt"
+        app:srcCompat="@drawable/law" />
+
+    <ImageView
+        android:id="@+id/pharm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/pharm_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eng_txt"
+        app:srcCompat="@drawable/pharm" />
+
+    <TextView
+        android:id="@+id/pharm_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="Pharmacy"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/arch_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:text="Architecture"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FDFDFD"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/civil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arch" />
+
+    <TextView
+        android:id="@+id/cse_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="Computer Science and Enginnering"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/bba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cse" />
+
+    <TextView
+        android:id="@+id/civil_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:text="Civil Engineering"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/eee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/civil" />
+
+    <TextView
+        android:id="@+id/eee_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:text="Electrical and Electronics Engineering"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/law"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eee" />
+
+    <TextView
+        android:id="@+id/eng_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="English"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pharm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eng" />
+
+    <TextView
+        android:id="@+id/law_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:text="Law"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/law"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dba_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="Business Administration"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/eng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bba" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562691506282",
+    "firebase_url": "https://uap-question-bank.firebaseio.com",
+    "project_id": "uap-question-bank",
+    "storage_bucket": "uap-question-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562691506282:android:a74dba0730caab38bd8a13",
+        "android_client_info": {
+          "package_name": "com.soad.uapquestionbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562691506282-6899drt0jkf8ich1rj0hliljpgrug9u0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soad.uapquestionbank",
+            "certificate_hash": "6e3951b949ff6c9a499d3955bf5027afaea09fa1"
+          }
+        },
+        {
+          "client_id": "562691506282-abl14fbgejao26vjvddsaoo7j9kk38e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZnSk0nTtcyyjipTinrz4x8rpKO18si9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562691506282-abl14fbgejao26vjvddsaoo7j9kk38e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

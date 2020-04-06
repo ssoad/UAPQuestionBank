@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soad.uapquestionbank">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Suggestion"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".cse.ViewQuestion_CSE_Eighth" />
+        <activity android:name=".cse.ViewQuestion_CSE_Seventh" />
+        <activity android:name=".cse.ViewQuestion_CSE_Sixth" />
+        <activity android:name=".cse.ViewQuestion_CSE_Fifth" />
+        <activity android:name=".cse.ViewQuestion_CSE_Fourth" />
+        <activity android:name=".cse.ViewQuestion_CSE_Third" />
+        <activity android:name=".cse.ViewQuestion_CSE_Second" />
+        <activity android:name=".cse.ViewQuestion_CSE_First" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Tenth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Nineth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Eighth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Seventh" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Sixth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Fifth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Fourth" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Third" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_Second" />
+        <activity android:name=".archi.ViewQuestion_ARCHI_First" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Eighth" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Seventh" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Sixth" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Fifth" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Fourth" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Third" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_Second" />
+        <activity android:name=".pharm.ViewQuestion_PHARM_First" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Eighth" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Seventh" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Sixth" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Fifth" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Fourth" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Third" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_Second" />
+        <activity android:name=".civil.ViewQuestion_CIVIL_First" />
+        <activity android:name=".eng.ViewQuestion_ENG_Eighth" />
+        <activity android:name=".eng.ViewQuestion_ENG_Seventh" />
+        <activity android:name=".eng.ViewQuestion_ENG_Sixth" />
+        <activity android:name=".eng.ViewQuestion_ENG_Fifth" />
+        <activity android:name=".eng.ViewQuestion_ENG_Fourth" />
+        <activity android:name=".eng.ViewQuestion_ENG_Third" />
+        <activity android:name=".eng.ViewQuestion_ENG_Second" />
+        <activity android:name=".eng.ViewQuestion_ENG_First" />
+        <activity android:name=".archi.Semester_ARCHI" />
+        <activity android:name=".law.ViewQuestion_LAW_Eighth" />
+        <activity android:name=".law.ViewQuestion_LAW_Seventh" />
+        <activity android:name=".law.ViewQuestion_LAW_Sixth" />
+        <activity android:name=".law.ViewQuestion_LAW_Fifth" />
+        <activity android:name=".law.ViewQuestion_LAW_Fourth" />
+        <activity android:name=".law.ViewQuestion_LAW_Third" />
+        <activity android:name=".law.ViewQuestion_LAW_Second" />
+        <activity android:name=".law.ViewQuestion_LAW_First" />
+        <activity android:name=".dba.Semester_DBA" />
+        <activity android:name=".eee.ViewQuestion_EEE_Eighth" />
+        <activity android:name=".eee.ViewQuestion_EEE_Seventh" />
+        <activity android:name=".eee.ViewQuestion_EEE_Sixth" />
+        <activity android:name=".eee.ViewQuestion_EEE_Fifth" />
+        <activity android:name=".eee.ViewQuestion_EEE_Fourth" />
+        <activity android:name=".eee.ViewQuestion_EEE_Third" />
+        <activity android:name=".eee.ViewQuestion_EEE_Second" />
+        <activity android:name=".eee.ViewQuestion_EEE_First" />
+        <activity android:name=".dba.ViewQuestion_DBA_Eighth" />
+        <activity android:name=".dba.ViewQuestion_DBA_Seventh" />
+        <activity android:name=".dba.ViewQuestion_DBA_Sixth" />
+        <activity android:name=".dba.ViewQuestion_DBA_Fifth" />
+        <activity android:name=".dba.ViewQuestion_DBA_Fourth" />
+        <activity android:name=".dba.ViewQuestion_DBA_Third" />
+        <activity android:name=".dba.ViewQuestion_DBA_Second" />
+        <activity android:name=".dba.ViewQuestion_DBA_First" />
+        <activity android:name=".law.Semester_LAW" />
+        <activity android:name=".pharm.Semester_PHARM" />
+        <activity android:name=".eng.Semester_ENG" />
+        <activity android:name=".civil.Semester_CIVIL" />
+        <activity android:name=".eee.Semester_EEE" />
+        <activity android:name=".FileUpload" />
+        <activity android:name=".ViewQuestions" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".cse.Semester_CSE" />
+        <activity android:name=".Home" />
+
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/appicon" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".FileUpload">
+
+    <TextView
+        android:id="@+id/contri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Upload Question"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/inputfield"
+
+
+        android:ems="10"
+        android:hint="Enter File Name"
+        android:inputType="textPersonName"
+        android:textColor="#304FFE"
+        android:textColorHint="#304FFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contri" />
+
+    <TextView
+        android:id="@+id/ex_file"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ex: CSE_1-1_Spring2019"
+        android:textColor="#A39F9F"
+        android:textSize="16sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFileName" />
+
+    <Button
+        android:id="@+id/buttonUploadFile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFileName"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="Choose PDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ex_file" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="66dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadFile" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="No file selected"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#DDDBDC"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
